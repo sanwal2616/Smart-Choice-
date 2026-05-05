@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Smart Choice Store | Facial Hair Remover Trimmer</title>
+  <meta name="description" content="Buy Facial Hair Remover Trimmer at Smart Choice Store. Safe, gentle, and easy to use. Free home delivery all over Pakistan. Order via WhatsApp.">
+  <meta name="keywords" content="Facial Hair Trimmer, Hair Removal, Smart Choice Store, Pakistan, Cash on Delivery, Beauty Product">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+  <!-- Google Fonts: Inter + Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #1a1a1a;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .gold-text {
+      color: #c9a03a;
+    }
+    .bg-gold {
+      background-color: #c9a03a;
+    }
+    .bg-dark {
+      background-color: #0f0f0f;
+    }
+    .btn-whatsapp {
+      background-color: #25D366;
+      transition: all 0.3s ease;
+    }
+    .btn-whatsapp:hover {
+      background-color: #1da851;
+      transform: scale(1.04);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+    }
+    .btn-dark {
+      background-color: #0f0f0f;
+      transition: all 0.3s ease;
+    }
+    .btn-dark:hover {
+      background-color: #2a2a2a;
+      transform: scale(1.03);
+    }
+    .hover-lift {
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+    .hover-lift:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 24px 32px -14px rgba(0,0,0,0.18);
+    }
+    .zoom-img {
+      transition: transform 0.45s ease;
+    }
+    .zoom-img:hover {
+      transform: scale(1.05);
+    }
+    .fade-section {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .pulse-whatsapp {
+      animation: greenPulse 2.2s infinite;
+    }
+    @keyframes greenPulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+    .sticky-order-btn {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 90;
+      width: calc(100% - 32px);
+      max-width: 420px;
+    }
+    @media (min-width: 768px) {
+      .sticky-order-btn {
+        display: none;
+      }
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(6px);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal.active {
+      display: flex;
+    }
+    input, textarea {
+      border: 1px solid #e5e5e5;
+      background: #fafafa;
+      transition: all 0.2s;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #c9a03a;
+      box-shadow: 0 0 0 3px rgba(201,160,58,0.12);
+      background: white;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+<!-- Sticky Header -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+  <div class="bg-dark text-white text-xs text-center py-1.5 font-medium tracking-wide">
+    🚚 Free Home Delivery All Over Pakistan
+  </div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14 md:h-16">
+    <div class="flex items-center gap-2">
+      <img src="Logo.jpg" alt="Smart Choice Store" class="h-10 w-auto object-contain rounded" onerror="this.outerHTML='<span class=\'font-bold text-xl text-dark\'>Smart Choice<span class=\'gold-text\'>.</span></span>'">
+      <span class="font-bold text-lg text-dark hidden sm:block">Smart Choice Store</span>
+    </div>
+    <button onclick="openOrderModal()" class="btn-whatsapp text-white px-5 py-2 rounded-full flex items-center gap-2 text-sm font-semibold pulse-whatsapp">
+      <i class="ri-whatsapp-line text-lg"></i> Order Now
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- Hero Section -->
+  <section class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 fade-section">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div class="text-center md:text-left">
+        <span class="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">🔥 Best Seller</span>
+        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mt-4 leading-tight">Facial Hair Remover Trimmer</h1>
+        <p class="text-gray-600 mt-4 text-lg">Safe, gentle, and easy to use at home. Get smooth, flawless skin instantly.</p>
+        <div class="text-3xl font-bold gold-text mt-4">Rs. 1,500 <span class="text-sm text-gray-400 line-through ml-2">Rs. 2,500</span></div>
+        <div class="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
+          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium">✅ Cash on Delivery</span>
+          <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">🔄 Easy Return</span>
+          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">🔒 Secure Order</span>
+        </div>
+        <button onclick="openOrderModal()" class="inline-flex items-center gap-3 btn-whatsapp text-white font-bold text-lg px-10 py-4 rounded-full mt-6 shadow-xl">
+          <i class="ri-whatsapp-line text-2xl"></i> Order Now
+        </button>
+      </div>
+      <div class="flex justify-center">
+        <img src="Product.jpg" alt="Facial Hair Remover Trimmer" class="w-full max-w-md h-auto object-cover rounded-2xl shadow-2xl zoom-img" onerror="this.style.background='#f0f0f0'; this.style.minHeight='350px';">
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Details -->
+  <section class="py-12 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-2xl font-serif font-bold mb-4">Product Details</h2>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Material: ABS Plastic, Metal</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Removes unwanted facial hair easily</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Perfect for shaping eyebrows</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Gives smooth, clean and flawless skin</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Safe and gentle on skin</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Durable and long-lasting</li>
+          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Easy to use for all users</li>
+        </ul>
+        <div class="mt-6 bg-white p-4 rounded-xl border">
+          <p class="font-semibold">📦 Package Includes:</p>
+          <p>1 x Trimmer</p>
+          <p class="text-sm text-gray-500 mt-2">⚠️ Please ensure to follow the instructions provided in the user manual for proper usage and safety precautions.</p>
+        </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-sm border">
+        <h3 class="font-serif text-xl font-bold mb-4">Why Choose This Trimmer?</h3>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="text-center p-3"><i class="ri-shield-check-line text-3xl gold-text"></i><p class="text-sm mt-1">Skin Friendly</p></div>
+          <div class="text-center p-3"><i class="ri-home-4-line text-3xl gold-text"></i><p class="text-sm mt-1">Home Use</p></div>
+          <div class="text-center p-3"><i class="ri-flashlight-line text-3xl gold-text"></i><p class="text-sm mt-1">Instant Results</p></div>
+          <div class="text-center p-3"><i class="ri-recycle-line text-3xl gold-text"></i><p class="text-sm mt-1">Reusable</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 fade-section">
+    <h2 class="text-3xl font-serif font-bold text-center mb-8">Product Gallery</h2>
+    <div class="grid grid-cols-2 gap-4 md:gap-6">
+      <img src="Picture01.jpg" alt="Trimmer view 1" class="w-full h-64 object-cover rounded-2xl shadow-md zoom-img" onerror="this.style.background='#eaeaea';">
+      <img src="Picture02.jpg" alt="Trimmer view 2" class="w-full h-64 object-cover rounded-2xl shadow-md zoom-img" onerror="this.style.background='#e0e0e0';">
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section class="py-16 bg-gray-50 fade-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-serif font-bold text-center mb-10">Customer Reviews</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Amazing product! Very easy to use and skin friendly. Highly recommended!"</p><span class="text-sm text-gray-500">- Ayesha K.</span></div>
+        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Fast delivery and great quality. My skin feels so smooth now."</p><span class="text-sm text-gray-500">- Fatima S.</span></div>
+        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Perfect for eyebrows. Painless and gives flawless results."</p><span class="text-sm text-gray-500">- Nadia R.</span></div>
+        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Best trimmer I have used. Durable and easy to clean."</p><span class="text-sm text-gray-500">- Sara M.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order CTA Section -->
+  <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6 text-center fade-section">
+    <div class="bg-dark text-white rounded-3xl p-8 md:p-12 shadow-2xl">
+      <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Limited Stock</span>
+      <h2 class="text-3xl md:text-4xl font-serif font-bold mt-4 mb-4">Ready to Get Smooth Skin?</h2>
+      <p class="text-gray-300 mb-8">Click below to place your order via WhatsApp</p>
+      <button onclick="openOrderModal()" class="btn-whatsapp text-white font-bold text-xl px-12 py-4 rounded-full inline-flex items-center gap-3 shadow-2xl">
+        <i class="ri-whatsapp-line text-2xl"></i> Order Now – Rs. 1,500
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-12 fade-section">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8 items-center">
+      <div>
+        <h4 class="font-serif text-2xl">Smart Choice Store</h4>
+        <p class="text-sm text-gray-400 mt-1">Quality Products, Delivered to Your Doorstep</p>
+      </div>
+      <div class="flex justify-center space-x-6 text-2xl">
+        <a href="#" class="hover:text-gold transition"><i class="ri-instagram-line"></i></a>
+        <a href="#" class="hover:text-gold transition"><i class="ri-facebook-line"></i></a>
+        <a href="https://wa.me/923136751709" class="hover:text-green-400 transition"><i class="ri-whatsapp-line"></i></a>
+      </div>
+      <div class="text-right text-sm text-gray-400">
+        <p>📞 +92 313 6751709</p>
+      </div>
+    </div>
+    <p class="text-center text-xs text-gray-500 mt-8">© Smart Choice Store. All Rights Reserved.</p>
+  </footer>
+</main>
+
+<!-- Order Modal -->
+<div id="orderModal" class="modal">
+  <div class="bg-white rounded-3xl max-w-md w-[90%] p-6 md:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+    <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-2xl text-gray-400 hover:text-gray-700">&times;</button>
+    <h3 class="text-2xl font-serif font-bold text-center mb-6">Place Your Order</h3>
+    <form id="orderForm" class="space-y-4">
+      <div class="text-center">
+        <p class="text-sm text-gray-500 mb-2">Quantity</p>
+        <div class="flex items-center justify-center gap-4">
+          <button type="button" onclick="changeQty(-1)" class="w-10 h-10 rounded-full bg-gray-100 text-xl font-bold hover:bg-gray-200">−</button>
+          <span id="qtyDisplay" class="text-2xl font-bold w-10 text-center">1</span>
+          <button type="button" onclick="changeQty(1)" class="w-10 h-10 rounded-full bg-gray-100 text-xl font-bold hover:bg-gray-200">+</button>
+        </div>
+        <p class="text-lg font-bold mt-2">Total: <span id="totalPrice" class="gold-text">Rs. 1,500</span></p>
+      </div>
+      <input type="text" id="fullName" placeholder="Full Name" required class="w-full p-3 rounded-xl">
+      <input type="tel" id="phone" placeholder="Phone Number" required class="w-full p-3 rounded-xl">
+      <textarea id="address" placeholder="Complete Address" required rows="2" class="w-full p-3 rounded-xl"></textarea>
+      <input type="text" id="landmark" placeholder="Landmark" required class="w-full p-3 rounded-xl">
+      <button type="submit" class="w-full btn-whatsapp text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-lg">
+        <i class="ri-whatsapp-line"></i> Send Order via WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Sticky Mobile Order Button -->
+<div class="sticky-order-btn">
+  <button onclick="openOrderModal()" class="flex items-center justify-center gap-2 btn-whatsapp text-white font-bold text-lg py-4 rounded-full shadow-2xl pulse-whatsapp w-full">
+    <i class="ri-whatsapp-line text-xl"></i> Order Now
+  </button>
+</div>
+
+<!-- Floating WhatsApp Desktop -->
+<a href="https://wa.me/923136751709" target="_blank" class="hidden md:flex fixed bottom-6 right-6 z-40 btn-whatsapp text-white p-4 rounded-full shadow-2xl pulse-whatsapp text-2xl hover:scale-110 transition">
+  <i class="ri-whatsapp-line"></i>
+</a>
+
+<script>
+  let quantity = 1;
+  const pricePerUnit = 1500;
+  const whatsappNumber = "923136751709";
+
+  function updateTotal() {
+    document.getElementById('qtyDisplay').textContent = quantity;
+    document.getElementById('totalPrice').textContent = `Rs. ${(quantity * pricePerUnit).toLocaleString()}`;
+  }
+
+  window.changeQty = (delta) => {
+    quantity = Math.max(1, quantity + delta);
+    updateTotal();
+  };
+
+  function openOrderModal() { document.getElementById('orderModal').classList.add('active'); }
+  function closeOrderModal() { document.getElementById('orderModal').classList.remove('active'); }
+  window.openOrderModal = openOrderModal;
+  window.closeOrderModal = closeOrderModal;
+
+  document.getElementById('orderForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const landmark = document.getElementById('landmark').value.trim();
+    if (!name || !phone || !address || !landmark) return alert('Please fill all fields.');
+
+    const total = quantity * pricePerUnit;
+    const message = `New Order:%0AProduct: Facial Hair Trimmer%0AQuantity: ${quantity}%0ATotal: Rs. ${total}%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0ALandmark: ${landmark}`;
+    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
+    this.reset();
+    quantity = 1;
+    updateTotal();
+    closeOrderModal();
+  });
+
+  // Fade animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const href = this.getAttribute('href');
+      if (href === '#') return;
+      e.preventDefault();
+      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Close modal on outside click
+  window.onclick = (e) => {
+    if (e.target === document.getElementById('orderModal')) closeOrderModal();
+  };
+</script>
+
+</body>
+</html>
