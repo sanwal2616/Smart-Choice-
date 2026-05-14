@@ -1,349 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
-  <title>Smart Choice Store | Facial Hair Remover Trimmer</title>
-  <meta name="description" content="Buy Facial Hair Remover Trimmer at Smart Choice Store. Safe, gentle, and easy to use. Free home delivery all over Pakistan. Order via WhatsApp.">
-  <meta name="keywords" content="Facial Hair Trimmer, Hair Removal, Smart Choice Store, Pakistan, Cash on Delivery, Beauty Product">
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Remix Icons CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
-  <!-- Google Fonts: Inter + Playfair Display -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
-      scroll-behavior: smooth;
-    }
-    h1, h2, h3, .font-serif {
-      font-family: 'Playfair Display', serif;
-    }
-    .gold-text {
-      color: #c9a03a;
-    }
-    .bg-gold {
-      background-color: #c9a03a;
-    }
-    .bg-dark {
-      background-color: #0f0f0f;
-    }
-    .btn-whatsapp {
-      background-color: #25D366;
-      transition: all 0.3s ease;
-    }
-    .btn-whatsapp:hover {
-      background-color: #1da851;
-      transform: scale(1.04);
-      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
-    }
-    .btn-dark {
-      background-color: #0f0f0f;
-      transition: all 0.3s ease;
-    }
-    .btn-dark:hover {
-      background-color: #2a2a2a;
-      transform: scale(1.03);
-    }
-    .hover-lift {
-      transition: transform 0.35s ease, box-shadow 0.35s ease;
-    }
-    .hover-lift:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 32px -14px rgba(0,0,0,0.18);
-    }
-    .zoom-img {
-      transition: transform 0.45s ease;
-    }
-    .zoom-img:hover {
-      transform: scale(1.05);
-    }
-    .fade-section {
-      opacity: 0;
-      transform: translateY(22px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .fade-section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .pulse-whatsapp {
-      animation: greenPulse 2.2s infinite;
-    }
-    @keyframes greenPulse {
-      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
-      70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
-    }
-    .sticky-order-btn {
-      position: fixed;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 90;
-      width: calc(100% - 32px);
-      max-width: 420px;
-    }
-    @media (min-width: 768px) {
-      .sticky-order-btn {
-        display: none;
-      }
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(0,0,0,0.55);
-      backdrop-filter: blur(6px);
-      z-index: 100;
-      align-items: center;
-      justify-content: center;
-    }
-    .modal.active {
-      display: flex;
-    }
-    input, textarea {
-      border: 1px solid #e5e5e5;
-      background: #fafafa;
-      transition: all 0.2s;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #c9a03a;
-      box-shadow: 0 0 0 3px rgba(201,160,58,0.12);
-      background: white;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shafiq Industry | Demand & Raw Materials | Products Price</title>
+    <meta name="description" content="Shafiq Industry - Submit Local & Karachi Demand, manage raw materials, browse industrial products pricing.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'accent': {
+                            DEFAULT: '#0d9488',
+                            light: '#2dd4bf',
+                            dark: '#0f766e',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'slide-up': 'slideUp 0.5s ease-out forwards',
+                        'fade-in': 'fadeIn 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        slideUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        :root {
+            --bg-primary: #0B1120;
+            --bg-secondary: #111827;
+            --surface: rgba(17, 25, 40, 0.6);
+            --text-primary: #F1F5F9;
+            --text-secondary: #CBD5E1;
+            --accent: #0d9488;
+            --accent-light: #2dd4bf;
+            --accent-dark: #0f766e;
+            --border: rgba(255, 255, 255, 0.08);
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+        * { scroll-behavior: smooth; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(ellipse at 50% 0%, #111827 0%, #0B1120 60%);
+            color: var(--text-primary);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            min-height: 100vh;
+            padding-top: 56px; /* height of navbar on mobile */
+        }
+        @media (min-width: 768px) {
+            body { padding-top: 64px; } /* height of navbar on desktop */
+        }
+        ::-webkit-scrollbar { width: 5px; }
+        ::-webkit-scrollbar-track { background: #0B1120; }
+        ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #0d9488, #0f766e); border-radius: 10px; }
+
+        .glass {
+            background: var(--surface);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            box-shadow: var(--shadow);
+        }
+        .glass-card {
+            background: rgba(17, 25, 40, 0.55);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .glass-card:hover {
+            border-color: rgba(13, 148, 136, 0.5);
+            box-shadow: 0 20px 40px rgba(13, 148, 136, 0.1);
+            transform: translateY(-4px);
+        }
+        .nav-glass {
+            background: rgba(11, 17, 32, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1100;
+            transition: all 0.3s ease;
+        }
+        .nav-scrolled {
+            background: rgba(11, 17, 32, 0.95);
+            border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        }
+
+        .input-premium {
+            background: rgba(17, 25, 40, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 11px 14px;
+            color: #F1F5F9;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            width: 100%;
+            outline: none;
+            font-family: 'Inter', sans-serif;
+        }
+        .input-premium:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(13, 148, 136, 0.2);
+            background: rgba(17, 25, 40, 0.9);
+        }
+        .input-premium::placeholder { color: #94a3b8; }
+        select.input-premium {
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%230d9488' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            padding-right: 32px;
+        }
+
+        .btn-premium {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            color: #fff;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 14px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.3px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            box-shadow: 0 6px 20px rgba(13, 148, 136, 0.25);
+        }
+        .btn-premium:hover {
+            box-shadow: 0 10px 30px rgba(13, 148, 136, 0.4);
+            transform: translateY(-2px);
+        }
+        .btn-outline-premium {
+            background: transparent;
+            color: #0d9488;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 14px;
+            border: 2px solid rgba(13, 148, 136, 0.5);
+            cursor: pointer;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: 'Poppins', sans-serif;
+            letter-spacing: 0.3px;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-outline-premium:hover {
+            border-color: #0d9488;
+            background: rgba(13, 148, 136, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .autocomplete-wrap { position: relative; flex: 1; min-width: 0; }
+        .autocomplete-dropdown {
+            position: absolute; top: calc(100% + 4px); left: 0; right: 0;
+            background: #1e293b;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px; max-height: 190px; overflow-y: auto;
+            z-index: 9999; display: none;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+        }
+        .autocomplete-dropdown.show { display: block; animation: fadeIn 0.2s ease-out; }
+        .autocomplete-item {
+            padding: 10px 14px; cursor: pointer; color: #CBD5E1;
+            font-size: 0.88rem; transition: all 0.15s ease;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .autocomplete-item:last-child { border-bottom: none; }
+        .autocomplete-item:hover, .autocomplete-item.active { background: rgba(13, 148, 136, 0.2); color: #fff; }
+        .autocomplete-item .highlight { color: #2dd4bf; font-weight: 600; }
+
+        .product-card {
+            background: rgba(17, 25, 40, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px; padding: 16px 20px;
+            transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex; align-items: center; justify-content: space-between; gap: 12px;
+        }
+        .product-card:hover {
+            border-color: rgba(13, 148, 136, 0.5);
+            box-shadow: 0 8px 25px rgba(13, 148, 136, 0.1);
+            transform: translateY(-2px);
+        }
+        .action-btns { display: flex; gap: 6px; flex-shrink: 0; }
+        .action-btn {
+            width: 34px; height: 34px; border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.15); background: rgba(255, 255, 255, 0.05);
+            color: #CBD5E1; cursor: pointer; transition: all 0.3s ease;
+            font-size: 14px; display: flex; align-items: center; justify-content: center;
+        }
+        .action-btn:hover { background: rgba(13, 148, 136, 0.2); border-color: #0d9488; color: #2dd4bf; }
+
+        .modal-overlay {
+            position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            z-index: 1500; display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1); padding: 16px;
+        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
+        .modal-content {
+            transform: translateY(25px) scale(0.94);
+            transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            max-height: 88vh; overflow-y: auto; width: 100%; max-width: 620px;
+            background: #111827; border-radius: 24px; border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+        }
+        .modal-overlay.active .modal-content { transform: translateY(0) scale(1); }
+
+        .float-wa {
+            position: fixed; bottom: 28px; right: 24px; z-index: 999;
+            width: 56px; height: 56px; border-radius: 50%;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            display: flex; align-items: center; justify-content: center; cursor: pointer;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            animation: pulse-slow 3s ease-in-out infinite; transition: all 0.3s ease;
+            border: none; font-size: 24px; color: #fff; text-decoration: none;
+        }
+        .float-wa:hover { transform: scale(1.1); box-shadow: 0 12px 40px rgba(37, 211, 102, 0.55); }
+        .scroll-top {
+            position: fixed; bottom: 98px; right: 24px; z-index: 998;
+            width: 44px; height: 44px; border-radius: 50%;
+            background: rgba(17, 25, 40, 0.8); backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex; align-items: center; justify-content: center; cursor: pointer;
+            transition: all 0.3s ease; opacity: 0; visibility: hidden; transform: translateY(16px);
+            color: #0d9488; font-size: 16px;
+        }
+        .scroll-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+        .scroll-top:hover { background: rgba(13, 148, 136, 0.2); border-color: #0d9488; }
+
+        .accent-line { width: 50px; height: 3px; background: linear-gradient(90deg, #0d9488, #2dd4bf); border-radius: 10px; }
+        .reveal { opacity: 0; transform: translateY(35px); transition: all 0.65s cubic-bezier(0.4, 0, 0.2, 1); }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+        .product-row { animation: fadeIn 0.35s ease-out; }
+
+        .mobile-menu {
+            position: fixed; top: 0; right: -300px; width: 280px; height: 100vh;
+            background: #0B1120; z-index: 1600;
+            transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 28px 22px; border-left: 1px solid rgba(255, 255, 255, 0.08);
+            display: flex; flex-direction: column; gap: 6px; box-shadow: -5px 0 25px rgba(0,0,0,0.5);
+        }
+        .mobile-menu.active { right: 0; }
+        .mobile-menu-backdrop {
+            position: fixed; inset: 0; background: rgba(0, 0, 0, 0.5);
+            z-index: 1599; opacity: 0; visibility: hidden; transition: all 0.35s ease;
+        }
+        .mobile-menu-backdrop.active { opacity: 1; visibility: visible; }
+
+        @media (max-width: 640px) {
+            body { padding-top: 56px; }
+            .nav-glass { top: 0; }
+            .float-wa { bottom: 18px; right: 12px; width: 48px; height: 48px; font-size: 20px; }
+            .scroll-top { bottom: 78px; right: 12px; width: 38px; height: 38px; font-size: 14px; }
+            .modal-overlay { align-items: flex-end; padding: 0; }
+            .modal-content { border-radius: 24px 24px 0 0; max-width: 100%; }
+        }
+    </style>
 </head>
-<body class="bg-white">
+<body class="font-inter antialiased">
 
-<!-- Sticky Header -->
-<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
-  <div class="bg-dark text-white text-xs text-center py-1.5 font-medium tracking-wide">
-    🚚 Free Home Delivery All Over Pakistan
-  </div>
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-14 md:h-16">
-    <div class="flex items-center gap-2">
-      <img src="Logo.jpg" alt="Smart Choice Store" class="h-10 w-auto object-contain rounded" onerror="this.outerHTML='<span class=\'font-bold text-xl text-dark\'>Smart Choice<span class=\'gold-text\'>.</span></span>'">
-      <span class="font-bold text-lg text-dark hidden sm:block">Smart Choice Store</span>
-    </div>
-    <button onclick="openOrderModal()" class="btn-whatsapp text-white px-5 py-2 rounded-full flex items-center gap-2 text-sm font-semibold pulse-whatsapp">
-      <i class="ri-whatsapp-line text-lg"></i> Order Now
-    </button>
-  </div>
-</header>
-
-<main>
-  <!-- Hero Section -->
-  <section class="py-10 md:py-16 max-w-7xl mx-auto px-4 sm:px-6 fade-section">
-    <div class="grid md:grid-cols-2 gap-10 items-center">
-      <div class="text-center md:text-left">
-        <span class="bg-gold/10 text-gold px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider">🔥 Best Seller</span>
-        <h1 class="text-3xl md:text-5xl lg:text-6xl font-serif font-bold mt-4 leading-tight">Facial Hair Remover Trimmer</h1>
-        <p class="text-gray-600 mt-4 text-lg">Safe, gentle, and easy to use at home. Get smooth, flawless skin instantly.</p>
-        <div class="text-3xl font-bold gold-text mt-4">Rs. 1,500 <span class="text-sm text-gray-400 line-through ml-2">Rs. 2,500</span></div>
-        <div class="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
-          <span class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium">✅ Cash on Delivery</span>
-          <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium">🔄 Easy Return</span>
-          <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs font-medium">🔒 Secure Order</span>
+    <!-- NAVBAR (without admin header) -->
+    <nav id="navbar" class="nav-glass">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14 md:h-16">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex items-center gap-2.5 group flex-shrink-0">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center text-white font-bold text-base shadow-lg shadow-teal-900/30">
+                        <i class="fas fa-industry text-sm"></i>
+                    </div>
+                    <span class="font-poppins font-bold text-base md:text-lg text-slate-100">Shafiq<span class="text-accent">Industry</span></span>
+                </a>
+            </div>
+            <button id="mobileMenuToggle" class="md:hidden text-slate-300 p-2 rounded-lg hover:bg-white/10"><i class="fas fa-bars text-lg"></i></button>
         </div>
-        <button onclick="openOrderModal()" class="inline-flex items-center gap-3 btn-whatsapp text-white font-bold text-lg px-10 py-4 rounded-full mt-6 shadow-xl">
-          <i class="ri-whatsapp-line text-2xl"></i> Order Now
-        </button>
-      </div>
-      <div class="flex justify-center">
-        <img src="Product.jpg" alt="Facial Hair Remover Trimmer" class="w-full max-w-md h-auto object-cover rounded-2xl shadow-2xl zoom-img" onerror="this.style.background='#f0f0f0'; this.style.minHeight='350px';">
-      </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Product Details -->
-  <section class="py-12 bg-gray-50 fade-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10">
-      <div>
-        <h2 class="text-2xl font-serif font-bold mb-4">Product Details</h2>
-        <ul class="space-y-3 text-gray-700">
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Material: ABS Plastic, Metal</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Removes unwanted facial hair easily</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Perfect for shaping eyebrows</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Gives smooth, clean and flawless skin</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Safe and gentle on skin</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Durable and long-lasting</li>
-          <li class="flex items-center gap-2"><i class="ri-check-line text-green-600 text-xl"></i> Easy to use for all users</li>
-        </ul>
-        <div class="mt-6 bg-white p-4 rounded-xl border">
-          <p class="font-semibold">📦 Package Includes:</p>
-          <p>1 x Trimmer</p>
-          <p class="text-sm text-gray-500 mt-2">⚠️ Please ensure to follow the instructions provided in the user manual for proper usage and safety precautions.</p>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenuBackdrop" class="mobile-menu-backdrop"></div>
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="flex justify-between items-center mb-4">
+            <span class="font-poppins font-bold text-slate-100">Menu</span>
+            <button id="mobileMenuClose" class="text-slate-400 hover:text-white p-2"><i class="fas fa-times text-lg"></i></button>
         </div>
-      </div>
-      <div class="bg-white p-6 rounded-2xl shadow-sm border">
-        <h3 class="font-serif text-xl font-bold mb-4">Why Choose This Trimmer?</h3>
-        <div class="grid grid-cols-2 gap-4">
-          <div class="text-center p-3"><i class="ri-shield-check-line text-3xl gold-text"></i><p class="text-sm mt-1">Skin Friendly</p></div>
-          <div class="text-center p-3"><i class="ri-home-4-line text-3xl gold-text"></i><p class="text-sm mt-1">Home Use</p></div>
-          <div class="text-center p-3"><i class="ri-flashlight-line text-3xl gold-text"></i><p class="text-sm mt-1">Instant Results</p></div>
-          <div class="text-center p-3"><i class="ri-recycle-line text-3xl gold-text"></i><p class="text-sm mt-1">Reusable</p></div>
+        <a href="#demand-cards" class="block px-3 py-3 rounded-xl text-slate-300 hover:text-accent hover:bg-white/5" onclick="closeMobileMenu()">Demand Services</a>
+        <a href="#products-section" class="block px-3 py-3 rounded-xl text-slate-300 hover:text-accent hover:bg-white/5" onclick="closeMobileMenu()">Products Price</a>
+        <div class="mt-auto text-xs text-slate-500">Managed by Admin Staff</div>
+    </div>
+
+    <!-- HERO -->
+    <section class="pt-6 md:pt-10 pb-10 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h1 class="font-poppins font-extrabold text-4xl sm:text-5xl md:text-6xl text-white tracking-tight mb-3 reveal">
+                Welcome to <span class="bg-gradient-to-r from-accent-light via-accent to-accent-dark bg-clip-text text-transparent">Shafiq Industry</span>
+            </h1>
+            <p class="text-slate-400 text-lg sm:text-xl reveal" style="animation-delay:0.15s;">Professional Demand Management & Industrial Raw Materials</p>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Gallery Section -->
-  <section class="py-16 max-w-7xl mx-auto px-4 sm:px-6 fade-section">
-    <h2 class="text-3xl font-serif font-bold text-center mb-8">Product Gallery</h2>
-    <div class="grid grid-cols-2 gap-4 md:gap-6">
-      <img src="Picture01.jpg" alt="Trimmer view 1" class="w-full h-64 object-cover rounded-2xl shadow-md zoom-img" onerror="this.style.background='#eaeaea';">
-      <img src="Picture02.jpg" alt="Trimmer view 2" class="w-full h-64 object-cover rounded-2xl shadow-md zoom-img" onerror="this.style.background='#e0e0e0';">
-    </div>
-  </section>
-
-  <!-- Reviews Section -->
-  <section class="py-16 bg-gray-50 fade-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6">
-      <h2 class="text-3xl font-serif font-bold text-center mb-10">Customer Reviews</h2>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Amazing product! Very easy to use and skin friendly. Highly recommended!"</p><span class="text-sm text-gray-500">- Ayesha K.</span></div>
-        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Fast delivery and great quality. My skin feels so smooth now."</p><span class="text-sm text-gray-500">- Fatima S.</span></div>
-        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Perfect for eyebrows. Painless and gives flawless results."</p><span class="text-sm text-gray-500">- Nadia R.</span></div>
-        <div class="bg-white p-6 rounded-2xl shadow hover-lift">⭐⭐⭐⭐⭐<p class="font-semibold mt-2">"Best trimmer I have used. Durable and easy to clean."</p><span class="text-sm text-gray-500">- Sara M.</span></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Order CTA Section -->
-  <section class="py-16 max-w-4xl mx-auto px-4 sm:px-6 text-center fade-section">
-    <div class="bg-dark text-white rounded-3xl p-8 md:p-12 shadow-2xl">
-      <span class="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold uppercase">Limited Stock</span>
-      <h2 class="text-3xl md:text-4xl font-serif font-bold mt-4 mb-4">Ready to Get Smooth Skin?</h2>
-      <p class="text-gray-300 mb-8">Click below to place your order via WhatsApp</p>
-      <button onclick="openOrderModal()" class="btn-whatsapp text-white font-bold text-xl px-12 py-4 rounded-full inline-flex items-center gap-3 shadow-2xl">
-        <i class="ri-whatsapp-line text-2xl"></i> Order Now – Rs. 1,500
-      </button>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-12 fade-section">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-8 items-center">
-      <div>
-        <h4 class="font-serif text-2xl">Smart Choice Store</h4>
-        <p class="text-sm text-gray-400 mt-1">Quality Products, Delivered to Your Doorstep</p>
-      </div>
-      <div class="flex justify-center space-x-6 text-2xl">
-        <a href="#" class="hover:text-gold transition"><i class="ri-instagram-line"></i></a>
-        <a href="#" class="hover:text-gold transition"><i class="ri-facebook-line"></i></a>
-        <a href="https://wa.me/923136751709" class="hover:text-green-400 transition"><i class="ri-whatsapp-line"></i></a>
-      </div>
-      <div class="text-right text-sm text-gray-400">
-        <p>📞 +92 313 6751709</p>
-      </div>
-    </div>
-    <p class="text-center text-xs text-gray-500 mt-8">© Smart Choice Store. All Rights Reserved.</p>
-  </footer>
-</main>
-
-<!-- Order Modal -->
-<div id="orderModal" class="modal">
-  <div class="bg-white rounded-3xl max-w-md w-[90%] p-6 md:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto">
-    <button onclick="closeOrderModal()" class="absolute top-4 right-4 text-2xl text-gray-400 hover:text-gray-700">&times;</button>
-    <h3 class="text-2xl font-serif font-bold text-center mb-6">Place Your Order</h3>
-    <form id="orderForm" class="space-y-4">
-      <div class="text-center">
-        <p class="text-sm text-gray-500 mb-2">Quantity</p>
-        <div class="flex items-center justify-center gap-4">
-          <button type="button" onclick="changeQty(-1)" class="w-10 h-10 rounded-full bg-gray-100 text-xl font-bold hover:bg-gray-200">−</button>
-          <span id="qtyDisplay" class="text-2xl font-bold w-10 text-center">1</span>
-          <button type="button" onclick="changeQty(1)" class="w-10 h-10 rounded-full bg-gray-100 text-xl font-bold hover:bg-gray-200">+</button>
+    <!-- DEMAND CARDS -->
+    <section id="demand-cards" class="py-10 md:py-14">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="grid sm:grid-cols-3 gap-6 md:gap-8">
+                <div class="glass-card p-6 text-center group reveal" onclick="openModal('localDemandModal')">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center text-white text-2xl mx-auto mb-5 shadow-lg shadow-teal-900/30 group-hover:shadow-teal-900/50 transition-all duration-300">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-white mb-2">Local Demand</h3>
+                    <p class="text-slate-400 text-sm">Submit local item demands with price & quantity</p>
+                    <span class="inline-block mt-4 text-accent text-sm font-medium group-hover:text-accent-light">Open Form →</span>
+                </div>
+                <div class="glass-card p-6 text-center group reveal" onclick="openModal('karachiDemandModal')">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center text-white text-2xl mx-auto mb-5 shadow-lg shadow-teal-900/30 group-hover:shadow-teal-900/50 transition-all duration-300">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-white mb-2">Karachi Demand</h3>
+                    <p class="text-slate-400 text-sm">Karachi region demand management</p>
+                    <span class="inline-block mt-4 text-accent text-sm font-medium group-hover:text-accent-light">Open Form →</span>
+                </div>
+                <div class="glass-card p-6 text-center group reveal" onclick="openModal('rawMaterialModal')">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent to-accent-dark flex items-center justify-center text-white text-2xl mx-auto mb-5 shadow-lg shadow-teal-900/30 group-hover:shadow-teal-900/50 transition-all duration-300">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3 class="font-poppins font-semibold text-lg text-white mb-2">Raw Materials</h3>
+                    <p class="text-slate-400 text-sm">Add raw material items with quantity (KG/Ltr)</p>
+                    <span class="inline-block mt-4 text-accent text-sm font-medium group-hover:text-accent-light">Open Form →</span>
+                </div>
+            </div>
         </div>
-        <p class="text-lg font-bold mt-2">Total: <span id="totalPrice" class="gold-text">Rs. 1,500</span></p>
-      </div>
-      <input type="text" id="fullName" placeholder="Full Name" required class="w-full p-3 rounded-xl">
-      <input type="tel" id="phone" placeholder="Phone Number" required class="w-full p-3 rounded-xl">
-      <textarea id="address" placeholder="Complete Address" required rows="2" class="w-full p-3 rounded-xl"></textarea>
-      <input type="text" id="landmark" placeholder="Landmark" required class="w-full p-3 rounded-xl">
-      <button type="submit" class="w-full btn-whatsapp text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-lg">
-        <i class="ri-whatsapp-line"></i> Send Order via WhatsApp
-      </button>
-    </form>
-  </div>
-</div>
+    </section>
 
-<!-- Sticky Mobile Order Button -->
-<div class="sticky-order-btn">
-  <button onclick="openOrderModal()" class="flex items-center justify-center gap-2 btn-whatsapp text-white font-bold text-lg py-4 rounded-full shadow-2xl pulse-whatsapp w-full">
-    <i class="ri-whatsapp-line text-xl"></i> Order Now
-  </button>
-</div>
-
-<!-- Floating WhatsApp Desktop -->
-<a href="https://wa.me/923136751709" target="_blank" class="hidden md:flex fixed bottom-6 right-6 z-40 btn-whatsapp text-white p-4 rounded-full shadow-2xl pulse-whatsapp text-2xl hover:scale-110 transition">
-  <i class="ri-whatsapp-line"></i>
-</a>
-
-<script>
-  let quantity = 1;
-  const pricePerUnit = 1500;
-  const whatsappNumber = "923136751709";
-
-  function updateTotal() {
-    document.getElementById('qtyDisplay').textContent = quantity;
-    document.getElementById('totalPrice').textContent = `Rs. ${(quantity * pricePerUnit).toLocaleString()}`;
-  }
-
-  window.changeQty = (delta) => {
-    quantity = Math.max(1, quantity + delta);
-    updateTotal();
-  };
-
-  function openOrderModal() { document.getElementById('orderModal').classList.add('active'); }
-  function closeOrderModal() { document.getElementById('orderModal').classList.remove('active'); }
-  window.openOrderModal = openOrderModal;
-  window.closeOrderModal = closeOrderModal;
-
-  document.getElementById('orderForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    const name = document.getElementById('fullName').value.trim();
-    const phone = document.getElementById('phone').value.trim();
-    const address = document.getElementById('address').value.trim();
-    const landmark = document.getElementById('landmark').value.trim();
-    if (!name || !phone || !address || !landmark) return alert('Please fill all fields.');
-
-    const total = quantity * pricePerUnit;
-    const message = `New Order:%0AProduct: Facial Hair Trimmer%0AQuantity: ${quantity}%0ATotal: Rs. ${total}%0A%0AName: ${name}%0APhone: ${phone}%0AAddress: ${address}%0ALandmark: ${landmark}`;
-    window.open(`https://wa.me/${whatsappNumber}?text=${message}`, '_blank');
-    this.reset();
-    quantity = 1;
-    updateTotal();
-    closeOrderModal();
-  });
-
-  // Fade animations
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-section').forEach(el => observer.observe(el));
-
-  // Smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const href = this.getAttribute('href');
-      if (href === '#') return;
-      e.preventDefault();
-      document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-
-  // Close modal on outside click
-  window.onclick = (e) => {
-    if (e.target === document.getElementById('orderModal')) closeOrderModal();
-  };
-</script>
-
-</body>
-</html>
+    <!-- PRODUCTS PRICE SECTION -->
+    <section id="products-section" class="py-10 md:py-14">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="text-center mb-8 reveal">
+                <h2 class="font-poppins font-bold text-3xl sm:text-4xl text-white">Products & Pricing</h2>
+                <div class="accent-line mx-auto mt-3"></div>
+                <p class="text-slate-400 text-sm mt-3">Search to view prices per piece. Add to demand forms with one click.</p>
+            </div>
+            <div class="max-w-lg mx-auto mb-8 reveal">
+                <div class="relative">
+                    <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
+                    <input type="text" id="productSearch" placeholder="Search products..." class="input-premium pl-11 pr-10 py-3.5 rounded-2xl" oninput="filterProducts()">
+                    <button onclick="clearSearch()" id="clearSearchBtn" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-accent opacity-0 pointer-events-none"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div id="searchPrompt" class="text-center py-12 reveal"><i class="fas fa-search text-4xl t
